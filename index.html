@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классы</title>
+     <link rel="stylesheet" href="style.css">
+   <!-- <script src="code.jquery.com_jquery-3.7.1.js"></script> -->
+    
+</head>
+
+<body>
+    <div>
+        <h3>Легковой автомобиль:</h3>
+        <p>Марка:</p>
+        <input type="text" class="marka">
+        <p>Цвет:</p>
+        <input type="text" class="color">
+        <p>Объем топливного бака (в литрах):</p>
+        <input type="text" class="fuelTankVolume">
+        <p>Норма потребления бензина (литров на 100 км):</p>
+        <input type="text" class="fuelConsumption">
+        <button onclick="createCar()">Создать легковой автомобиль</button>
+        <div class="carResult">
+            <p>Марка: <span class="carBrand"></span></p>
+            <p>Цвет: <span class="carColor"></span></p>
+            <p>Расстояние, которое проедет: <span class="carDistance"></span> км</p>
+        </div>
+    </div>
+    <div>
+        <h3>Грузовой автомобиль:</h3>
+        <p>Марка:</p>
+        <input type="text" class="truckMarka">
+        <p>Цвет:</p>
+        <input type="text" class="truckColor">
+        <p>Грузоподъемность (тонн):</p>
+        <input type="text" class="cargoCapacity">
+        <p>Цена литра бензина (рубли):</p>
+        <input type="text" class="fuelPrice">
+        <p>Норма потребления бензина (литров на 100 км):</p>
+        <input type="text" class="truckConsumption">
+        <button onclick="createTruck()">Создать грузовой автомобиль</button>
+        <div class="truckResult">
+            <p>Марка: <span class="truckBrand"></span></p>
+            <p>Цвет: <span class="truckColorResult"></span></p>
+            <p>Себестоимость транспортировки одной тонны на 1 км: <span class="transportCost"></span> руб</p>
+        </div>
+    </div>
+
+
+
+<br><br>
+<h4>Параллелепипед</h4>
+    <div>
+        <p>Ширина:</p>
+        <input type="text" class="width">
+        <p>Высота:</p>
+        <input type="text" class="height">
+        <p>Глубина:</p>
+        <input type="text" class="depth">
+        <button onclick="volume()">Объём:</button>
+        <p>Объём: <span class="truckVolume"></span></p>
+            <p>Масса:</p>
+           <input type="text" class="weight">
+           <button onclick="density()">Плотность:</button>
+            <div class="truckResult">
+            <p>Плотность: <span class="truckDensity"></span></p> 
+        </div>
+    </div>
+    <br><br>
+
+    <script src="index.js"></script>
+</body>
+</html>
